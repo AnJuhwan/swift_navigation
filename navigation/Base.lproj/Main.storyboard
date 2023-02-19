@@ -16,43 +16,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMU-mg-2f4">
-                                <rect key="frame" x="20" y="398" width="350" height="48"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="hRa-j5-4MB"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="이동"/>
-                                <connections>
-                                    <segue destination="kkJ-J4-2wo" kind="show" id="PVF-Vu-bDt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la0-HP-wWX">
-                                <rect key="frame" x="20" y="466" width="350" height="48"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="Qw7-Nv-Cme"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="gAj-C0-Jt5"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="코드 이동"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="81k-Y3-OOU">
+                                <rect key="frame" x="20" y="121" width="350" height="184"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-wB-XwA">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="jeF-nA-5tZ"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="두번째로 이동"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMU-mg-2f4">
+                                        <rect key="frame" x="0.0" y="68" width="350" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="hRa-j5-4MB"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="디테일 이동"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la0-HP-wWX">
+                                        <rect key="frame" x="0.0" y="136" width="350" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Qw7-Nv-Cme"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="gAj-C0-Jt5"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="코드 이동"/>
+                                        <connections>
+                                            <action selector="onPushBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uDF-VS-QWs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="la0-HP-wWX" firstAttribute="top" secondItem="pMU-mg-2f4" secondAttribute="bottom" constant="20" id="0Z6-GA-tas"/>
-                            <constraint firstItem="la0-HP-wWX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2Ih-Wa-aVC"/>
-                            <constraint firstItem="pMU-mg-2f4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="546-XU-EHt"/>
-                            <constraint firstItem="pMU-mg-2f4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="K83-Ew-0sL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pMU-mg-2f4" secondAttribute="trailing" constant="20" id="jfm-VK-hId"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="la0-HP-wWX" secondAttribute="trailing" constant="20" id="wx1-pM-PQz"/>
+                            <constraint firstItem="81k-Y3-OOU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="286-fS-3YP"/>
+                            <constraint firstItem="81k-Y3-OOU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="J4Y-tW-uSc"/>
+                            <constraint firstItem="81k-Y3-OOU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YQv-zU-woC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="첫번째" id="fc2-kB-fHe"/>
+                    <connections>
+                        <outlet property="navToDetailVCBtn" destination="pMU-mg-2f4" id="Z0Y-4H-HyF"/>
+                        <outlet property="navToSecondVCBtn" destination="Ees-wB-XwA" id="PpK-Tz-9OM"/>
+                        <segue destination="kkJ-J4-2wo" kind="show" identifier="navToSecondVC" id="SKc-VP-5f8"/>
+                        <segue destination="ksn-zB-b1X" kind="show" identifier="navToDetailVC" id="0s4-Gg-D2Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,6 +143,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yZv-aU-Lf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140" y="-2.1327014218009479"/>
+        </scene>
+        <!--DetailViewController-->
+        <scene sceneID="JjS-Kj-gxc">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DetailViewController" storyboardName="DetailVC" referencedIdentifier="DetailViewController" id="ksn-zB-b1X" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mZQ-FE-UKc"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjg-D3-75f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="498"/>
         </scene>
         <!--마지막-->
         <scene sceneID="8vJ-2P-4oS">

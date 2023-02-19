@@ -13,6 +13,8 @@
 		BB551D49298AAAF1000EECF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB551D47298AAAF1000EECF3 /* Main.storyboard */; };
 		BB551D4B298AAAF2000EECF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB551D4A298AAAF2000EECF3 /* Assets.xcassets */; };
 		BB551D4E298AAAF2000EECF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB551D4C298AAAF2000EECF3 /* LaunchScreen.storyboard */; };
+		BB551D58298E29DF000EECF3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB551D57298E29DF000EECF3 /* DetailViewController.swift */; };
+		BB551D5A298E2DB0000EECF3 /* DetailVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB551D59298E2DB0000EECF3 /* DetailVC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BB551D4A298AAAF2000EECF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB551D4D298AAAF2000EECF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB551D4F298AAAF2000EECF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB551D57298E29DF000EECF3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BB551D59298E2DB0000EECF3 /* DetailVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailVC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				BB551D43298AAAF1000EECF3 /* SceneDelegate.swift */,
 				BB551D45298AAAF1000EECF3 /* ViewController.swift */,
 				BB551D47298AAAF1000EECF3 /* Main.storyboard */,
+				BB551D59298E2DB0000EECF3 /* DetailVC.storyboard */,
+				BB551D57298E29DF000EECF3 /* DetailViewController.swift */,
 				BB551D4A298AAAF2000EECF3 /* Assets.xcassets */,
 				BB551D4C298AAAF2000EECF3 /* LaunchScreen.storyboard */,
 				BB551D4F298AAAF2000EECF3 /* Info.plist */,
@@ -127,6 +133,7 @@
 			files = (
 				BB551D4E298AAAF2000EECF3 /* LaunchScreen.storyboard in Resources */,
 				BB551D4B298AAAF2000EECF3 /* Assets.xcassets in Resources */,
+				BB551D5A298E2DB0000EECF3 /* DetailVC.storyboard in Resources */,
 				BB551D49298AAAF1000EECF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 				BB551D46298AAAF1000EECF3 /* ViewController.swift in Sources */,
 				BB551D42298AAAF1000EECF3 /* AppDelegate.swift in Sources */,
 				BB551D44298AAAF1000EECF3 /* SceneDelegate.swift in Sources */,
+				BB551D58298E29DF000EECF3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
